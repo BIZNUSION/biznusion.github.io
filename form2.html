@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIZNUSION</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 20px;
+      }
+      
+      header .navbar {
+        width:100%;
+        height: 3rem;
+        background-color:rgba(0,0,0,0.3);
+
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: 
+        space-between;
+        
+      }
+        .navbar .menu-links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+        }
+
+        .navbar .menu-links li a {
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.2s ease;
+        }
+
+        .navbar .menu-links .language-item a {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        }
+
+        .navbar .menu-links .language-item span {
+        font-size: 1.3rem;
+        }
+
+        .navbar .menu-links li a:hover {
+        color: gold;
+        }
+
+        .navbar .menu-links .join-btn a {
+        border: 1px solid #fff;
+        padding: 8px 15px;
+        border-radius: 4px;
+        }
+
+        .navbar .menu-links .join-btn a:hover {
+        color: #fff;
+        border-color: transparent;
+        background: gold;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            background-image: url(background.jpg);
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+        /* Your CSS styles here */
+</head>
+<body>
+<header id="navbar">
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="logo.png" style="width: 68px; height: 65px; position: absolute; left: 4%; top: 4%;" alt="Biznusion">
+        </a>
+        <ul class="menu-links">
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="services.html">What we do ?</a></li>
+            <li><a href="OurBlogs.html">Growth Results</a></li>
+            <li><a href="casestudies.html">Case Studies</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li class="language-item">
+                <a href="#">
+                    <span class="material-symbols-outlined">language</span>
+                    English
+                </a>
+            </li>
+            <li class="join-btn"><a href="contact.html">Contact</a></li>
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+</header>
+<div class="container">
+    <h1>Jr. Data Analyst/Researcher Internship </h1>
+    <li> Please write <b style="color:red">NO</b> if you are not sure about that Question! </li>
+    <li> Don't give wrong information</li>
+     <li><b style="color:red"> You will get an interview call soon!! </b> </li>    
+    <form 
+    action="https://formspree.io/f/myyrldbn"
+    method="POST"">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <h2>Education</h2>
+        <label for="degree">Degree:</label><br>
+        <input type="text" id="degree" name="degree" required><br><br>
+
+        <label for="university">University/College:</label><br>
+        <input type="text" id="university" name="university" required><br><br>
+
+        <label for="major">Major:</label><br>
+        <input type="text" id="major" name="major" required><br><br>
+
+        <label for="grad_year">Graduation Year:</label><br>
+        <input type="number" id="grad_year" name="grad_year" min="1900" max="2099" required><br><br>
+
+        <h2>Skills and Qualifications</h2>
+        <label for="skills">Skills:</label><br>
+        <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="experience">Experience:</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="projects">Projects:</label><br>
+        <textarea id="projects" name="projects" rows="4" cols="50"></textarea><br><br>
+
+        <label for="certifications">Certifications:</label><br>
+        <textarea id="certifications" name="certifications" rows="4" cols="50"></textarea><br><br>
+
+        <h2>Additional Information</h2>
+        <label for="reference">Reference (Name/Contact):</label><br>
+        <input type="text" id="reference" name="reference"><br><br>
+
+        <label for="linkedin">LinkedIn Profile:</label><br>
+        <input type="url" id="linkedin" name="linkedin"><br><br>
+
+        <label for="portfolio">Portfolio/Website:</label><br>
+        <input type="url" id="portfolio" name="portfolio"><br><br>
+
+        <label for="other_info">Any other information:</label><br>
+        <textarea id="other_info" name="other_info" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</div>
+</body>
+</html>
