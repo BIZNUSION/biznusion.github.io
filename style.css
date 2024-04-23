@@ -341,6 +341,40 @@ content {
 .footer-col .icons i:hover  {
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+
+  .navbar .menu-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .navbar .menu-links.show-menu {
+      display: flex;
+  }
+
+  .navbar #hamburger-btn {
+      display: block;
+  }
+
+  .navbar #close-menu-btn {
+      display: none;
+  }
+
+  .navbar .menu-links li {
+      margin-bottom: 15px;
+  }
+
+  .navbar .menu-links li a {
+      font-size: 1.2rem;
+  }
+}
 
 @media (max-width: 768px) {
   .footer {

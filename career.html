@@ -147,6 +147,40 @@
         border-color: transparent;
         background: gold;
         }
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+
+            .navbar .menu-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .navbar .menu-links.show-menu {
+                display: flex;
+            }
+
+            .navbar #hamburger-btn {
+                display: block;
+            }
+
+            .navbar #close-menu-btn {
+                display: none;
+            }
+
+            .navbar .menu-links li {
+                margin-bottom: 15px;
+            }
+
+            .navbar .menu-links li a {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -168,6 +202,17 @@
                     </a>
                   </li>
                 <li class="join-btn"><a href="contact.html">Contact</a></li>
+                <script>
+                  const header = document.querySelector("header");
+                  const hamburgerBtn = document.querySelector("#hamburger-btn");
+                  const closeMenuBtn = document.querySelector("#close-menu-btn");
+              
+                  // Toggle mobile menu on hamburger button click
+                  hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+              
+                  // Close mobile menu on close button click
+                  closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+                </script>
                 <span id="close-menu-btn" class="material-symbols-outlined">close</span>
               </ul>
               <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
@@ -239,9 +284,26 @@
   </div>
 
 </div>
+<script>
+  // JavaScript to toggle menu on small screens
+  const menuBtn = document.getElementById('hamburger-btn');
+  const closeBtn = document.getElementById('close-menu-btn');
+  const menuLinks = document.querySelector('.navbar .menu-links');
+
+  menuBtn.addEventListener('click', function () {
+      menuLinks.classList.add('show-menu');
+      menuBtn.style.display = 'none';
+      closeBtn.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function () {
+      menuLinks.classList.remove('show-menu');
+      menuBtn.style.display = 'block';
+      closeBtn.style.display = 'none';
+  });
+</script>
 <footer>
   <li>&copy; 2024 Your Company. All rights reserved.</p>
 </footer>
 </body>
 </html>
-<script src="script.js"></script>

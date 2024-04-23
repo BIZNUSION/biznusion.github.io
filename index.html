@@ -72,34 +72,34 @@
         <div class="footer-col">
           <h4>Info</h4>
           <ul class="links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Client Stories</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Case Studies</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="career.html">Internship</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="casestudies.html">Case Studies</a></li>
           </ul>
         </div>
         
         <div class="footer-col">
           <h4>What we do?</h4>
           <ul class="links">
-            <li><a href="#">Data Analysis</a></li>
-            <li><a href="#">Business Analysis</a></li>
-            <li><a href="#">Big Data Analysis</a></li>
-            <li><a href="#">Consulting</a></li>
-            <li><a href="#">Business Solutions</a></li>
-            <li><a href="#">Digital Transformation</a></li>
+            <li><a href="services.html">Data Analysis</a></li>
+            <li><a href="services.html">Business Analysis</a></li>
+            <li><a href="services.html">Big Data Analysis</a></li>
+            <li><a href="services.html">Consulting</a></li>
+            <li><a href="services.html">Business Solutions</a></li>
+            <li><a href="services.html">Digital Transformation</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Legal</h4>
           <ul class="links">
-            <li><a href="#">Customer Agreement</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">GDPR</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Media Kit</a></li>
+            <li><a href="index.html">Customer Agreement</a></li>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">GDPR</a></li>
+            <li><a href="index.html">Security</a></li>
+            <li><a href="index.html">Testimonials</a></li>
+            <li><a href="index.html">Media Kit</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -129,6 +129,24 @@
         </video>
       </div>
       <script src="script.js"></script>
+      <script>
+        // JavaScript to toggle menu on small screens
+        const menuBtn = document.getElementById('hamburger-btn');
+        const closeBtn = document.getElementById('close-menu-btn');
+        const menuLinks = document.querySelector('.navbar .menu-links');
+    
+        menuBtn.addEventListener('click', function () {
+            menuLinks.classList.add('show-menu');
+            menuBtn.style.display = 'none';
+            closeBtn.style.display = 'block';
+        });
+    
+        closeBtn.addEventListener('click', function () {
+            menuLinks.classList.remove('show-menu');
+            menuBtn.style.display = 'block';
+            closeBtn.style.display = 'none';
+        });
+    </script>
 </div id='content'>
     </body>
     </html>
