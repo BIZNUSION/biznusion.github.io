@@ -315,6 +315,8 @@ content {
       box-sizing: border-box;
       display:flex;
       justify-content: space-between;
+      min-width:500px;
+
   }
 
   .navbar .menu-links {
@@ -329,7 +331,11 @@ content {
   }
 
   .navbar #hamburger-btn {
-      display: block;
+    display: block;
+    position: absolute;
+    right: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .navbar #close-menu-btn {
