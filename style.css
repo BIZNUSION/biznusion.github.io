@@ -20,28 +20,37 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-  padding: 20px;
+  padding: 0px;
 }
 
 header .navbar {
-  max-width: 1280px;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(49, 25, 115); /* Add this line */
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  position: center;
-  width: 1000px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  border-radius: 100%; /* Creates a circular shape */
-  top: 7%; 
-  bottom:0; /* Adjust as needed */
-  left: 7%;
-
-
-  border-radius: 100px;
+  padding: 0 20px;
 }
-
+.casecontainer {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color:white
+}
+.carcontainer {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color:white
+}
 content {
   padding-top: 60px; /* Adjust to match the height of your navbar */
 }
@@ -137,7 +146,7 @@ content {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #1dbf73;
+  background: #6021ff;
   color: #fff;
   border-radius: 0 4px 4px 0;
   transition: background 0.2s ease;
@@ -198,8 +207,36 @@ content {
   padding: 0;
   box-sizing: border-box;
 }
+.concontainer {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color:white
+}
 
-
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: white;
+}
 
 .container {
   max-width: 1200px;
@@ -214,7 +251,7 @@ content {
   transform: translate(-50%, -50%);
   max-width: 1280px;
   width: 95%;
-  background: #10182F;
+  background: #270a89;
   border-radius: 6px;
 }
 
